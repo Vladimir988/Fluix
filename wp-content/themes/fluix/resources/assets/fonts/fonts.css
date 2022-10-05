@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Mont";
+  src:
+      url("./Mont-Black.woff2") format("woff2"),
+      url("./Mont-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+      url("./Mont-Heavy.woff2") format("woff2"),
+      url("./Mont-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+      url("./Mont-Bold.woff2") format("woff2"),
+      url("./Mont-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src:
+      url("./Mont-Regular.woff2") format("woff2"),
+      url("./Mont-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.menu-switcher a::before {
+    background: url('../images/world.png');
+    background-size: contain;
+}
+
+.footer--lang::before {
+    background: url('../images/footer-world.svg');
+    background-size: contain;
+}

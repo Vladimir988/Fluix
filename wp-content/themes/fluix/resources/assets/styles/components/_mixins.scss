@@ -1,0 +1,27 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@mixin corners($bg, $tl: 0, $tr: $tl, $br: $tl, $bl: $tr) {
+    background: $bg;
+    background: linear-gradient(135deg, transparent $tl, $bg 0) top left,
+    linear-gradient(225deg, transparent $tr, $bg 0) top right,
+    linear-gradient(45deg, transparent $br, $bg 0) bottom left,
+    linear-gradient(-45deg, transparent $bl, $bg 0) bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+@mixin hex {
+    clip-path: polygon(25% 0, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%);
+}
+
+@mixin star {
+    clip-path: polygon(50% 0%, 64% 35%, 100% 38%, 72% 60%, 82% 100%, 50% 77%, 18% 100%, 28% 60%, 0% 38%, 36% 35%);
+}
